@@ -1,0 +1,14 @@
+set paste
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set paste
+syntax enable
+set background=dark
+
+" Don't conceal quotes in json
+let g:vim_json_syntax_conceal = 0
+
+" macro .. delete text matching GUID pattern
+com! DeleteGUID g/"[0-9a-f]\{8}-[0-9a-f]\{4}-[0-9a-f]\{4}-[0-9a-f]\{4}-[0-9a-f]\{12}": ""/d
+
